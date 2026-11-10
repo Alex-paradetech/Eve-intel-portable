@@ -55,3 +55,15 @@ How the cyno check works
 
 Sample sizes: solo/fleet ratio uses the latest <= 1000 PvP kills zKillboard returns
 (newest first); ship usage and fleet size use the latest 50 kills + 25 losses.
+EVE Char Intel v1.2: what's new
+November 2026. Replaces v1.1. Just swap the .exe: your settings and cache stay in the EVE-Char-Intel-data folder next to it.
+New
+Pilot + Ship: see the fit. Paste Pilot Name - Ship (for example Aiko Bianchi - Loki) to get the fit from that pilot's latest loss of that ship. Handy when what he flies now is not in his top 3. It shows slots, loaded charges and drones, with a Copy EFT button for the in-game fitting window or Pyfa.
+Separators: | ; , : / > -> =>, a spaced dash, or brackets: Pilot (Ship). The order can be swapped. Use the ship's exact in-game name.
+The clipboard watch auto-scans it when the separator has spaces around it (Pilot - Ship).
+Fits older than a year are not shown.
+Tray icon and global hotkey (Windows). Left-click the tray icon to show or hide the HUD; right-click for a menu. The minimize button and a new Tray button send it to the tray. Ctrl+Alt+F10 brings the HUD above all windows and focuses the name box; press it again to hide it. Change or disable it in eve_char_intel_config.json: {"hotkey": "ctrl+shift+f9", "tray": true, "minimize_to_tray": true} ("hotkey": "" turns it off).
+Good to know
+Pick a hotkey EVE does not use: a global hotkey is taken before the game sees it. If another program already owns the combination, the status line says so.
+To see the HUD over EVE, run the game in Fixed window or borderless mode; Windows cannot draw over exclusive fullscreen.
+This build is unsigned. Windows SmartScreen may warn and some antivirus engines may give a false alarm. 
